@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/main.css">
+    <title>Countries</title>
+    <style type="text/tailwindcss">
+        @layer utilities {
+            .content-auto {
+                content-visibility: auto;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header class="py-6 px-20 bg-white fixed top-0 w-[100%] shadow-md">
+        <div class="flex justify-between items-center">
+            <h1 class="text-[#111517] text-[24px] font-extrabold leading-[32px] ">Where in the world?</h1>
+        <button class="flex items center gap-[2px]" onclick="changeImg()">
+            <img class="dark" src="./images/dark.svg" alt="dark" width="20" height="20">
+            <span class="text-[16px] text-[#111517] leadng-[21px]">Dark Mode</span>
+        </button>
+        </div>
+    </header>
+    <main class="mt-[85px]">
+        <section class="px-[80px] py-[48px]">
+            <div class="flex items-center justify-between mb-[48px]">
+                <input class="search border-slate-300 border-[2px] rounded-[5px] w-[480px] px-8 py-[19px] outline-none" type="text" placeholder="Search">
+                <select class="select w-[200px] h-[56px] border-[2px] border-slate-300 rounded-[5px] p-2">
+                    <option value="all">all</option>
+                </select>
+            </div>
+            <ul class="heroList flex gap-[75px] justify-between wrap flex-wrap"></ul>
+        </section>
+    </main>
+    <script src="./js/countries.js"></script>
+    <script src="./js/main.js"></script>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        clifford: '#da373d',
+                    }
+                }
+            }
+        }
+    </script>
+</body>
+</html>
