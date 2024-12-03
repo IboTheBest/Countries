@@ -23,3 +23,12 @@ body{
     font-family: 'Nunito Sans';
     justify-content: space-;
 }
+.make-dark{
+    background-color: #2B3844;
+}
+.search{
+  background-image: url("../images/search.svg");
+  background-repeat: no-repeat;
+  background-size: 18px;
+  background-position: 32px center;
+}
